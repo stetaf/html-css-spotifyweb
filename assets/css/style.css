@@ -57,3 +57,8 @@
 .active_menu {
     border-left: 2px solid #adff2f;
 }
+
+.side_option { 
+    font-size: 14px;
+    font-weight: bold;
+}
