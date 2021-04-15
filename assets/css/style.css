@@ -71,9 +71,10 @@
     font-weight: bold;
 }
 
-.plus > span {
+.create_playlist span {
     display: inline-block;
     vertical-align: middle;
+    padding-left: 5px;
 }
 
 .my_playlists ul { 
@@ -82,8 +83,8 @@
     list-style: none;
 }
 
-.my_playlists li {
-    margin: 15px 0;
+.my_playlists li:not(li:first-child) {
+    margin: 12px 0;
 }
 
 /* Utilities */
@@ -95,7 +96,6 @@
     border-left: 2px solid #adff2f;
 }
 
-.side_option { 
+.f_14 { 
     font-size: 14px;
-    font-weight: bold;
 }
