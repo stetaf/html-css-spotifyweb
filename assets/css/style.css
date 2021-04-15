@@ -178,7 +178,8 @@
     font-weight: bold;
 }
 
-.created_for h6 { margin-bottom: 25px; }
+.created_for h6,
+.popular_artists h6 { margin-bottom: 25px; }
 
 /* /Main content */
 
