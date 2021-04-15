@@ -1,0 +1,12 @@
+/* Page structure */
+.main_menu {
+    width: 200px;
+    min-height: calc( (100vh) - 100px );
+    background-color: black;
+}
+
+.bottom_controls {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
