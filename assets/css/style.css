@@ -26,7 +26,8 @@
 
 .main_content { 
     width: calc(100% - 230px);
-    height: calc(100% - 100px);
+    height: calc(100vh - 200px);
+    overflow-y: auto;
     background-color: #141922;
     float: left;
 }
