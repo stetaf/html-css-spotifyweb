@@ -34,7 +34,6 @@
 }
 
 .menu_icons {
-    display: flex;
     flex-direction: column;
     padding: 5px 0;
 }
@@ -47,6 +46,40 @@
 
 .menu_icons a {
     vertical-align: middle;
+}
+
+.menu_playlists {
+    margin: 15px 20px;
+}
+
+.plus {
+    width: 37px;
+    height: 37px;
+    background-color: #717171;
+    color: black;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.plus::after {
+    content: "+";
+    position: absolute;
+    top: -30%;
+    left: 16%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.plus > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.my_playlists ul { 
+    padding: unset;
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Utilities */
