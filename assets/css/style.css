@@ -152,6 +152,11 @@
     left: 33%;
 }
 
+.recently_played { margin: 0 5px;}
+
+.song_img {
+    width: 100%;
+}
 /* /Main content */
 
 /* Utilities */
