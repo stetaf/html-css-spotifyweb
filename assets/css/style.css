@@ -162,16 +162,20 @@
 
 .songs_played { margin-top: 25px; }
 
-.songs_played h5 {
+.songs_played h5,
+.music_artists h5 {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 15px;
 }
 
-.songs_played h6 { 
+.songs_played h6,
+.created_for h6 { 
     font-size: 0.8rem; 
     font-weight: bold;
 }
+
+.created_for h6 { margin-bottom: 25px; }
 
 /* /Main content */
 
