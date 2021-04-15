@@ -30,6 +30,8 @@
     background-color: #141922;
     float: left;
 }
+
+.main_container { margin: 0 20px; }
 /* /Page structure */
 
 /* Main menu */
@@ -153,9 +155,8 @@
     left: 33%;
 }
 
-.recently_played { margin: 0 20px; }
-
-.recently_played h2 { font-size: 1.5rem; }
+.recently_played h2,
+.created_for h2 { font-size: 1.5rem; }
 
 .song_img { width: 100%; }
 
@@ -166,6 +167,7 @@
     font-weight: bold;
     margin-top: 15px;
 }
+
 /* /Main content */
 
 /* Utilities */
