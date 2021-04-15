@@ -153,10 +153,18 @@
     left: 33%;
 }
 
-.recently_played { margin: 0 5px;}
+.recently_played { margin: 0 20px; }
 
-.song_img {
-    width: 100%;
+.recently_played h2 { font-size: 1.5rem; }
+
+.song_img { width: 100%; }
+
+.songs_played { margin-top: 25px; }
+
+.songs_played h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 15px;
 }
 /* /Main content */
 
