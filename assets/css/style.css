@@ -157,7 +157,10 @@
 
 .recently_played h2,
 .created_for h2,
-.popular_artists h2 { font-size: 1.5rem; }
+.popular_artists h2 { 
+    font-size: 1.5rem; 
+    margin-top: 15px;
+}
 
 .song_img { width: 100%; }
 
