@@ -156,21 +156,24 @@
 }
 
 .recently_played h2,
-.created_for h2 { font-size: 1.5rem; }
+.created_for h2,
+.popular_artists h2 { font-size: 1.5rem; }
 
 .song_img { width: 100%; }
 
 .songs_played { margin-top: 25px; }
 
 .songs_played h5,
-.music_artists h5 {
+.music_artists h5,
+.popular_artists h5 {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 15px;
 }
 
 .songs_played h6,
-.created_for h6 { 
+.created_for h6, 
+.popular_artists h6 { 
     font-size: 0.8rem; 
     font-weight: bold;
 }
