@@ -25,3 +25,30 @@
     height: calc(100% - 100px);
     background-color: green;
 }
+/* /Page structure */
+
+/* Main menu */
+.main_menu .site_logo img {
+    width: 85%;
+    margin: 10px;
+}
+
+.menu_icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.menu_icons img {
+    width: 25px;
+    margin: 5px;
+}
+
+.menu_icons a {
+    vertical-align: middle;
+}
+
+/* Utilities */
+.gray {
+    color: #717171;
+}
