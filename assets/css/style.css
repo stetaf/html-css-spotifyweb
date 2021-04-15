@@ -92,10 +92,9 @@
 }
 
 .user_profile {
-    height: 100%;
     width: calc( 100% - 40px );
     position: absolute;
-    bottom: -90%;
+    bottom: 0;
     margin: 10px 20px;
 }
 
