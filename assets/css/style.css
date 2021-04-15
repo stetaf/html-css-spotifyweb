@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.main_container { 
+.main_content { 
     width: 100%;
     height: calc(100% - 100px);
     background-color: #141922;
@@ -131,15 +131,34 @@
     }
 /* /Upgrade account */
 
+/* Main content */
+.main_categories ul { list-style: none; }
+
+.main_categories li { 
+    display: inline-block; 
+    margin: 15px 10px;
+}
+
+.active_2 { position: relative; }
+
+.active_2::after {
+    content: "";
+    width: 30px;
+    border-bottom: 2px solid #adff2f;
+    display: block;
+    position: absolute;
+    left: 33%;
+}
+
+/* /Main content */
+
 /* Utilities */
 .gray { color: #717171; }
 
 .white { color: white; }
 
-.active_menu {
-    border-left: 2px solid #adff2f;
-}
+.active_menu { border-left: 2px solid #adff2f; }
 
-.f_14 { 
-    font-size: 14px;
-}
+.f_14 { font-size: 14px; }
+
+.text_center { text-align: center; }
