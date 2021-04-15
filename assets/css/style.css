@@ -168,6 +168,11 @@
     margin-top: 15px;
 }
 
+.songs_played h6 { 
+    font-size: 0.8rem; 
+    font-weight: bold;
+}
+
 /* /Main content */
 
 /* Utilities */
