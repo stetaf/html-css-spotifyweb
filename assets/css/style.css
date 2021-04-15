@@ -17,8 +17,11 @@
 .upgrade_account {
     width: calc(100% - 230px);
     height: 100px;
-    background-color: red;
+    background-color: #080b12a1;
     float: left;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .main_container { 
@@ -120,7 +123,14 @@
 }
 /* /Main menu */
 
-
+/* Upgrade account */
+    .upgrade_message {
+        padding: 10px 40px;
+        border: 1px solid white;
+        margin-right: 5px;
+        border-radius: 40px;
+    }
+/* /Upgrade account */
 
 /* Utilities */
 .gray { color: #717171; }
