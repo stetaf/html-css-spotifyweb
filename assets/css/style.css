@@ -4,6 +4,7 @@
     min-height: calc( (100vh) - 100px );
     background-color: black;
     float: left;
+    position: relative;
 }
 
 .bottom_controls {
@@ -85,6 +86,37 @@
 
 .my_playlists li:not(li:first-child) {
     margin: 12px 0;
+}
+
+.user_profile {
+    height: 100%;
+    width: calc( 100% - 40px );
+    position: absolute;
+    bottom: -90%;
+    margin: 10px 20px;
+}
+
+.profile_icon {
+    width: 25px;
+    height: 25px;
+    background-color: #717171;
+    border-radius: 50%;
+    background-image: url("../img/profile.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.install_app {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.user_profile hr { 
+    border-bottom: 1px solid #717171;
+    margin: unset;
 }
 
 /* Utilities */
