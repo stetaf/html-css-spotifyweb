@@ -29,19 +29,20 @@
 
 /* Main menu */
 .main_menu .site_logo img {
-    width: 65%;
+    width: 60%;
     margin: 20px;
 }
 
 .menu_icons {
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    padding: 5px 0;
 }
 
 .menu_icons img {
-    width: 25px;
-    margin: 5px;
+    width: 40px;
+    margin: 5px 0 5px 5px;
+    padding-left: 15px;
 }
 
 .menu_icons a {
