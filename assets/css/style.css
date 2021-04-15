@@ -52,3 +52,7 @@
 .gray { color: #717171; }
 
 .white { color: white; }
+
+.active_menu {
+    border-left: 2px solid #adff2f;
+}
