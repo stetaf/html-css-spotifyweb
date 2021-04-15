@@ -82,6 +82,10 @@
     list-style: none;
 }
 
+.my_playlists li {
+    margin: 15px 0;
+}
+
 /* Utilities */
 .gray { color: #717171; }
 
