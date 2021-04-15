@@ -28,6 +28,7 @@
     width: calc(100% - 230px);
     height: calc(100% - 100px);
     background-color: #141922;
+    float: left;
 }
 /* /Page structure */
 
