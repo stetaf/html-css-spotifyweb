@@ -3,10 +3,25 @@
     width: 200px;
     min-height: calc( (100vh) - 100px );
     background-color: black;
+    float: left;
 }
 
 .bottom_controls {
     width: 100%;
     height: 100px;
     background-color: gray;
+    display: flex;
+}
+
+.upgrade_account {
+    width: calc(100% - 200px);
+    height: 100px;
+    background-color: red;
+    float: left;
+}
+
+.main_container { 
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: green;
 }
