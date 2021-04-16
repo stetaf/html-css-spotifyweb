@@ -21,7 +21,8 @@
                 <div class="menu_container">
                     <!-- Site Logo -->
                     <div class="site_logo">
-                        <img src="./assets/img/logo.svg" alt="Spotify logo">
+                        <img src="./assets/img/logo.svg" class="logo_normal" alt="Spotify logo">
+                        <img src="./assets/img/logo-small.svg" class="logo_small" alt="Spotify small logo">
                     </div>
                     <!-- /Site Logo -->
         
@@ -41,7 +42,7 @@
                                         <span class="font-weight-bold f_14">Cerca</span>
                                     </a>
                                 </div>
-                                <div class="home_icon">
+                                <div class="library_icon">
                                     <a href="#" class="text-decoration-none gray">
                                         <img src="./assets/img/libreria.svg" alt="Library icon">
                                         <span class="font-weight-bold f_14">La tua libreria</span>
@@ -147,42 +148,42 @@
                         <h2 class="white font-weight-bold">Recently played</h2>
                         <div class="songs_played d-flex">
                             <div class="row">
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/metal_lifting.jpg" class="song_img" alt="Metal cover">
                                     <span class="text-center white">
                                         <h5>Heavy Metal</h5>
                                         <h6 class="gray">Subtitle</h6>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/stranger.jpeg" class="song_img" alt="Stranger things cover">
                                     <span class="text-center white">
                                         <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
                                         <h6 class="gray">Kyle Dixon & Micheal Stein</h6>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/aquietplace.jpeg" class="song_img" alt="A quiet place cover">
                                     <span class="text-center white">
                                         <h5>A quiet place</h5>
                                         <h6 class="gray">Subtitle</h6>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/split.jpeg" class="song_img" alt="Split cover">
                                     <span class="text-center white">
                                         <h5>Split</h5>
                                         <h6 class="gray">Subtitle</h6>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/cure.jpeg" class="song_img" alt="A cure for wellness cover">
                                     <span class="text-center white">
                                         <h5>A cure for wellness</h5>
                                         <h6 class="gray">Subtitle</h6>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/sinister.jpeg" class="song_img" alt="Sinister cover">
                                     <span class="text-center white">
                                         <h5>Sinister</h5>
@@ -200,13 +201,13 @@
                         <h6 class="gray">Più ascolti, più accurati saranno i suggerimenti.</h6>
                         <div class="music_artists">
                             <div class="row justify-content-start">
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/radar.jpeg" class="song_img" alt="Release radar image">
                                     <span class="text-center white">
                                         <h5>Release radar</h5>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/mixdaily.jpeg" class="song_img" alt="Daily mix image">
                                     <span class="text-center white">
                                         <h5>Daily Mix 1</h5>
@@ -224,13 +225,13 @@
                         <h6 class="gray">Più ascolti, più accurati saranno i suggerimenti.</h6>
                         <div class="music_artists">
                             <div class="row justify-content-start">
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/youg.jpeg" class="song_img" alt="Youg image">
                                     <span class="text-center white">
                                         <h5>Youg</h5>
                                     </span>
                                 </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6">
+                                <div class="col-6 col-sm-6 col-md-3 col-lg-2">
                                     <img src="./assets/img/einaudi.jpeg" class="song_img" alt="Einaudi image">
                                     <span class="text-center white">
                                         <h5>Einaudi</h5>
@@ -249,12 +250,13 @@
     
         <!-- Bottom controls -->
         <section class="bottom_controls">
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-3">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-3 col-sm-4 col-md-4 col-lg-3">
                         <!-- Left controls -->
                         <div class="song_info d-flex">
                             <img src="./assets/img/sinister.jpeg" alt="Sinister cover">
-                            <div>
+                            <div class="song_t">
                                 <h6 class="song_tit font-weight-bold white">Sinister</h6>
                                 <h6 class="font-weight-bold gray">Brano Nome</h6>
                             </div>
@@ -265,13 +267,13 @@
                         </div>
                         <!-- /Left controls -->
                     </div>
-                    <div class="col-sm-4 col-md-4 col-lg-6">
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-6">
                         <!-- Center controls -->   
                         <div class="music_controls d-flex">
                             <div>
                                 <a href="#" class="white"><i class="fas fa-random f_14 white"></i></a>
                                 <a href="#" class="white"><i class="fas fa-step-backward f_14 white"></i></a>
-                                <a href="#" class="white"><i class="far fa-play-circle f_14 white" style="font-size: 30px;"></i></a>
+                                <a href="#" class="white"><i class="play far fa-play-circle f_14 white"></i></a>
                                 <a href="#" class="white"><i class="fas fa-step-forward f_14 white"></i></a>
                                 <a href="#" class="white"><i class="fas fa-redo-alt f_14 white"></i></a>
                             </div>
@@ -283,7 +285,7 @@
                         </div>                 
                         <!-- /Center controls -->
                     </div>
-                    <div class="col-sm-4 col-md-4 col-lg-3">
+                    <div class="col-3 col-sm-4 col-md-4 col-lg-3">
                         <!-- Right controls -->
                         <div class="right_controls d-flex">
                             <a href="#"><i class="white fas fa-list f_14 mx-2"></i></a>
@@ -293,7 +295,8 @@
                         </div>
                         <!-- /Right controls -->
                     </div>
-                </div>                
+                </div>
+            </div>                
         </section>
         <!-- /Bottom controls -->
     </main>

@@ -46,6 +46,8 @@
 /* /Page structure */
 
 /* Main menu */
+.logo_small { display: none; }
+
 .menu_container {
     min-width: 0;
     min-height: 0;
@@ -241,7 +243,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120%;
+    width: 100%;
 }
 
 .music_controls {
@@ -254,8 +256,10 @@
 
 .music_controls i {
     margin: 0px 12px;
-    font-size: 17px;
+    font-size: 20px;
 }
+
+.music_controls .play { font-size: 35px; }
 
 .music_controls a { 
     vertical-align: middle;
@@ -295,6 +299,7 @@
     border-radius: 5px;
     margin-right: 20px;
     position: relative;
+    margin-top: 3px;
 }
 
 .volume_progress::after {
@@ -308,6 +313,11 @@
 /* /Main content */
 
 /* Utilities */
+.container { 
+    max-width: 100% !important; 
+    padding: unset !important;
+}
+
 .gray { color: #717171; }
 
 .white { color: white; }
@@ -347,4 +357,96 @@
         padding: unset;
         margin: 0 5px !important;
     }
+}
+
+/* Extrasmall devices */
+@media screen and (max-width: 575px) {
+    .home_icon span, 
+    .search_icon span, 
+    .library_icon span,
+    .menu_playlists,
+    .logo_normal,
+    .install_app span,
+    .profile span { display: none;}
+
+    .home_icon, 
+    .search_icon, 
+    .library_icon { text-align: center !important; }
+
+    .logo_small { 
+        display: block;
+        height: 30px;
+        width: 30px !important;
+        margin: 10px 10px 0 10px !important;
+    }
+
+    .main_menu { width: 50px; }
+
+    .main_content,
+    .upgrade_account { width: calc( 100% - 50px ); }
+
+    .home_icon img, 
+    .search_icon img, 
+    .library_icon img {
+        width: 30px !important; 
+        margin: 5px 0 !important;
+        padding: 0 !important;
+    }
+
+    .menu_icons { padding: unset; }
+
+    .active_menu { border: unset !important; }
+
+    .profile_icon { margin: unset !important; }
+
+    .user_profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .install_app { text-align: center; }
+
+    .app_install hr { display: none; }
+
+    .music_controls i { 
+        margin: 0 3px; 
+        font-size: 17px;
+    }
+
+    .play { font-size: 24px !important; }
+
+    .song_info img { width: 30px; }
+
+    .song_info h6 { 
+        margin: 0 5px; 
+        width: 50%;    
+    }
+
+    .song_t { width: 45%; }
+
+    .song_info .song_titles {
+        flex-direction: column;
+    }
+
+    .right_controls i {
+        padding: unset;
+        margin: 0 5px !important;
+    }
+
+    .song_titles .mx-4,
+    .song_titles i { margin: 0 11px !important; }
+
+    .music_status { width: 100%; }
+
+    .right_controls { margin-right: 10px; }
+
+    .right_controls i { font-size: 12px; }
+
+    .volume_progress { display: none; }
+
+}
+
+@media screen and (max-width:475px) {
+
+    .song_titles {display: none !important; }
 }
