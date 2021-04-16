@@ -4,7 +4,9 @@
     height: calc( 100vh - 100px );
     background-color: black;
     float: left;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .bottom_controls {
@@ -96,8 +98,6 @@
 
 .user_profile {
     width: calc( 100% - 40px );
-    position: absolute;
-    bottom: 0;
     margin: 10px 20px;
 }
 
