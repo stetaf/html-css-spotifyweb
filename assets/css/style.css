@@ -14,13 +14,16 @@
     width: 100%;
     height: 100px;
     background-color: gray;
-    display: flex;
+    min-height: 100px;
+    z-index: 2;
+    position: relative;
 }
 
 .upgrade_account {
     width: calc(100% - 230px);
     height: 100px;
     background-color: #080b12;
+    float: left;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -35,6 +38,12 @@
 }
 
 .main_container { margin: 0 20px; }
+
+.content_wrapper {
+    height: calc(100vh - 100px);
+    z-index: 0;
+    position: relative;
+}
 /* /Page structure */
 
 /* Main menu */
