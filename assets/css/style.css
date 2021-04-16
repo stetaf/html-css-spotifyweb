@@ -160,7 +160,10 @@
 /* /Upgrade account */
 
 /* Main content */
-.main_categories ul { list-style: none; }
+.main_categories ul { 
+    list-style: none; 
+    padding: unset;
+}
 
 .main_categories li { 
     display: inline-block; 
