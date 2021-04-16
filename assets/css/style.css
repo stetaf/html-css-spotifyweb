@@ -225,3 +225,11 @@
 .f_14 { font-size: 14px; }
 
 .text_center { text-align: center; }
+/* /Utilies */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-height: 470px) {
+    .main_menu { min-height: 0; }
+    .user_profile { display: none; }
+}
