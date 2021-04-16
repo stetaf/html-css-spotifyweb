@@ -153,24 +153,6 @@
     height: 100px;
     align-items: center;
 }
-
-.song_info { margin-left: 15px; }
-
-.song_info h6 { 
-    font-size: 12px;
-    margin-left: 10px;
-    margin-bottom: 0;
-}
-
-.song_info img { width: 50px; }
-
-.song_info img, 
-.song_info .song_tit {
-    display: inline-block;
-}
-
-.song_info i { margin: 0 15px 0 -15px; }
-
 /* /Main menu */
 
 /* Upgrade account */
@@ -235,6 +217,81 @@
 .created_for h6,
 .popular_artists h6 { margin-bottom: 25px; }
 
+.song_info { margin-left: 15px; }
+
+.song_info h6 { 
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.song_info img { width: 50px; }
+
+.song_info img, 
+.song_info .song_tit {
+    display: inline-block;
+}
+
+.song_info i { margin: 0 15px 0 -15px; }
+
+.music_status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_controls i {
+    margin: 10px 15px;
+}
+
+.music_progress {
+    border: 2px solid #5a5a5a;
+    height: 1px;
+    display: inline-block;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.music_progress::after {
+    content: "";
+    position: absolute;
+    border: 2px solid white;
+    width: 20%;
+    margin: -2px -2px;
+    border-radius: 5px;
+}
+
+.right_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.right_controls a { display: inline-block; }
+
+.volume_progress {
+    border: 2px solid #5a5a5a;
+    height: 1px;
+    display: inline-block;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.volume_progress::after {
+    content: "";
+    position: absolute;
+    border: 2px solid white;
+    width: 10%;
+    margin: -2px -2px;
+    border-radius: 5px;
+}
 /* /Main content */
 
 /* Utilities */
@@ -246,6 +303,8 @@
 
 .f_14 { font-size: 14px; }
 
+.f_12 { font-size: 12px; }
+ 
 .text_center { text-align: center; }
 /* /Utilies */
 
