@@ -232,10 +232,6 @@
 
 .song_info i { margin: 0 15px 0 -15px; }
 
-.bottom_controls .row [class*="col-"] {
-    padding: unset;
-}
-
 .bottom_controls .song_info {
     height: 100px;
     align-items: center;
@@ -245,7 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 90%;
 }
 
 .music_controls {
@@ -257,7 +253,7 @@
 }
 
 .music_controls i {
-    margin: 10px 15px;
+    margin: 10px 12px;
 }
 
 .music_controls a { 
