@@ -1,6 +1,7 @@
 /* Page structure */
 .main_menu {
     width: 230px;
+    min-height: 450px;
     height: calc( 100vh - 100px );
     background-color: black;
     float: left;
@@ -96,7 +97,7 @@
 
 .playlists_list {
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: calc(100% - 180px);
     margin-top: 10px;
 }
