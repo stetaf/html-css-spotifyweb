@@ -241,7 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 120%;
 }
 
 .music_controls {
@@ -253,7 +253,8 @@
 }
 
 .music_controls i {
-    margin: 10px 12px;
+    margin: 0px 12px;
+    font-size: 17px;
 }
 
 .music_controls a { 
@@ -263,9 +264,8 @@
 
 .music_progress {
     border: 2px solid #5a5a5a;
-    height: 1px;
     display: inline-block;
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -316,7 +316,7 @@
 
 .f_14 { font-size: 14px; }
 
-.f_12 { font-size: 12px; }
+.f_10 { font-size: 10px; }
  
 .text_center { text-align: center; }
 /* /Utilies */
@@ -326,4 +326,25 @@
 @media screen and (max-height: 470px) {
     .main_menu { min-height: 0; }
     .user_profile { display: none; }
+}
+
+/* Small devices */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    .music_controls i { margin: 5px 6px; }
+
+    .song_info img { width: 40px; }
+
+    .song_info h6 { margin: 0 10px; }
+
+    .song_info .song_titles {
+        flex-direction: column;
+    }
+
+    .song_titles .mx-4,
+    .song_titles i,
+    .right_controls i {
+        padding: unset;
+        margin: 0 5px !important;
+    }
 }
