@@ -246,21 +246,22 @@
             <!-- /Main content -->
         </div>
     
-        <section class="bottom_controls">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="song_info d-flex">
-                        <img src="./assets/img/sinister.jpeg" alt="Sinister cover">
-                        <div>
-                            <h6 class="song_tit font-weight-bold white">Sinister</h6>
-                            <h6 class="font-weight-bold gray">Brano Nome</h6>
-                        </div>
-                        <i class="far fa-heart gray mx-4"></i>
-                        <i class="far fa-folder gray"></i>
+        <!-- Bottom controls -->
+        <section class="bottom_controls d-flex">
+                <!-- Left controls -->
+                <div class="song_info d-flex">
+                    <img src="./assets/img/sinister.jpeg" alt="Sinister cover">
+                    <div>
+                        <h6 class="song_tit font-weight-bold white">Sinister</h6>
+                        <h6 class="font-weight-bold gray">Brano Nome</h6>
                     </div>
+                    <i class="far fa-heart gray mx-4"></i>
+                    <i class="far fa-folder gray"></i>
                 </div>
-                <div class="col-md-6">
-                    <div class="music_controls">
+
+                <!-- Center controls -->   
+                <div class="music_controls d-flex">
+                    <div>
                         <a href="#" class="white"><i class="fas fa-random white"></i></a>
                         <a href="#" class="white"><i class="fas fa-step-backward white"></i></a>
                         <a href="#" class="white"><i class="far fa-play-circle white" style="font-size: 35px;"></i></a>
@@ -272,17 +273,20 @@
                         <span class="music_progress"></span>
                         <span class="font-weight-bold f_12 white mx-3">4:35</span>
                     </div>
+                </div>                 
+                <!-- /Center controls -->
+                
+                <!-- Right controls -->
+                <div class="right_controls d-flex">
+                    <a href="#"><i class="white fas fa-list mx-2"></i></a>
+                    <a href="#"><i class="white fas fa-desktop mx-2"></i></a>
+                    <a href="#"><i class="white fas fa-volume-up mx-2"></i></a>
+                    <span class="volume_progress"></span>
                 </div>
-                <div class="col-md-3">
-                    <div class="right_controls">
-                        <a href="#"><i class="white fas fa-list mx-2"></i></a>
-                        <a href="#"><i class="white fas fa-desktop mx-2"></i></a>
-                        <a href="#"><i class="white fas fa-volume-up mx-2"></i></a>
-                        <span class="volume_progress"></span>
-                    </div>
-                </div>
+                <!-- /Right controls -->
             </div>
         </section>
+        <!-- /Bottom controls -->
     </main>
     <!-- /Main -->
 </body>

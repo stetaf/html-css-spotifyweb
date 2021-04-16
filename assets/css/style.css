@@ -17,6 +17,7 @@
     min-height: 100px;
     z-index: 2;
     position: relative;
+    overflow: hidden;
 }
 
 .upgrade_account {
@@ -149,10 +150,6 @@
     margin: unset;
 }
 
-.bottom_controls .song_info {
-    height: 100px;
-    align-items: center;
-}
 /* /Main menu */
 
 /* Upgrade account */
@@ -217,7 +214,10 @@
 .created_for h6,
 .popular_artists h6 { margin-bottom: 25px; }
 
-.song_info { margin-left: 15px; }
+.song_info { 
+    margin-left: 15px;
+    flex-grow: 1;
+}
 
 .song_info h6 { 
     font-size: 12px;
@@ -234,20 +234,37 @@
 
 .song_info i { margin: 0 15px 0 -15px; }
 
+.bottom_controls .row [class*="col-"] {
+    padding: unset;
+}
+
+.bottom_controls .song_info {
+    height: 100px;
+    align-items: center;
+}
+
 .music_status {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 75%;
 }
 
 .music_controls {
-    display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    height: 100%;
+    flex-grow: 2;
 }
 
 .music_controls i {
     margin: 10px 15px;
+}
+
+.music_controls a { 
+    vertical-align: middle;
+    display: inline-block; 
 }
 
 .music_progress {
@@ -268,10 +285,10 @@
 }
 
 .right_controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .right_controls a { display: inline-block; }
@@ -280,17 +297,19 @@
     border: 2px solid #5a5a5a;
     height: 1px;
     display: inline-block;
-    width: 30%;
+    width: 40%;
     border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
 }
 
 .volume_progress::after {
     content: "";
-    position: absolute;
     border: 2px solid white;
-    width: 10%;
+    position: absolute;
     margin: -2px -2px;
     border-radius: 5px;
+    width: 25%;
 }
 /* /Main content */
 
