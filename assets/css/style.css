@@ -95,7 +95,8 @@
 }
 
 .playlists_list {
-    overflow: scroll;
+    overflow: hidden;
+    overflow-y: scroll;
     height: calc(100% - 180px);
     margin-top: 10px;
 }
