@@ -149,6 +149,28 @@
     margin: unset;
 }
 
+.bottom_controls .song_info {
+    height: 100px;
+    align-items: center;
+}
+
+.song_info { margin-left: 15px; }
+
+.song_info h6 { 
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.song_info img { width: 50px; }
+
+.song_info img, 
+.song_info .song_tit {
+    display: inline-block;
+}
+
+.song_info i { margin: 0 15px 0 -15px; }
+
 /* /Main menu */
 
 /* Upgrade account */
