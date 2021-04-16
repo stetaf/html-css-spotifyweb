@@ -23,6 +23,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    display: none   ;
 }
 
 .main_content { 
@@ -37,6 +38,12 @@
 /* /Page structure */
 
 /* Main menu */
+.menu_container {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;   
+}
+
 .main_menu .site_logo img {
     width: 60%;
     margin: 20px;
@@ -59,6 +66,8 @@
 
 .menu_playlists {
     margin: 15px 20px;
+    height: calc(100% - 100px);
+    overflow: hidden;
 }
 
 .plus {
@@ -86,13 +95,19 @@
     padding-left: 5px;
 }
 
-.my_playlists ul { 
+.playlists_list {
+    overflow: scroll;
+    height: calc(100% - 180px);
+    margin-top: 10px;
+}
+
+.playlists_list ul { 
     padding: unset;
     text-decoration: none;
     list-style: none;
 }
 
-.my_playlists li:not(li:first-child) {
+.playlists_list li:not(li:first-child) {
     margin: 12px 0;
 }
 
