@@ -41,8 +41,7 @@
 
 .content_wrapper {
     height: calc(100vh - 100px);
-    z-index: 0;
-    position: relative;
+    overflow: hidden;
 }
 /* /Page structure */
 
