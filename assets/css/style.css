@@ -24,7 +24,6 @@
     width: calc(100% - 230px);
     height: 100px;
     background-color: #080b12;
-    float: left;
     display: flex;
     justify-content: flex-end;
     align-items: center;
