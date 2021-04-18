@@ -292,7 +292,7 @@
 
 .music_controls i {
     margin: 0px 12px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .music_controls .play { font-size: 35px; }
@@ -416,6 +416,8 @@
 .f_10 { font-size: 10px; }
  
 .text_center { text-align: center; }
+
+.text_right { text-align: right; }
 /* /Utilies */
 
 /* MEDIA QUERIES */
@@ -428,7 +430,14 @@
 /* Small devices */
 @media screen and (min-width: 576px) and (max-width: 767px) {
 
-    .music_controls i { margin: 5px 6px; }
+    .music_controls i { 
+        font-size: 16px;
+        margin: 5px 6px; 
+    }
+
+    .music_controls .play { font-size: 27px; }
+
+    .bottom_controls .play:hover { font-size: 28px; }
 
     .song_info img { width: 40px; }
 
