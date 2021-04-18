@@ -67,25 +67,25 @@
                         <div class="playlists_list">
                             <ul>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist1</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist2</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist3</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist4</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist5</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist6</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                                 <li>
-                                    <span class="gray f_14">Nome Playlist7</span>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
                                 </li>
                             </ul>
                         </div>
@@ -106,8 +106,8 @@
                         <div class="profile my-2">
                             <a href="#" class="text-decoration-none">
                                 <div class="profile_icon"></div>
-                                <span class="align-middle mx-1 white font-weight-bold">John Doe</span>                            
                             </a>
+                            <span class="align-middle mx-1 white font-weight-bold">John Doe</span>                            
                         </div>
                     </div>
                 </div>
@@ -321,8 +321,8 @@
                                 <h6 class="font-weight-bold gray">Brano Nome</h6>
                             </div>
                             <div class="song_titles d-flex">
-                                <i class="far fa-heart gray mx-4"></i>
-                                <i class="far fa-folder gray"></i>
+                                <i class="song_heart far fa-heart gray mx-4"></i>
+                                <i class="song_folder far fa-folder gray"></i>
                             </div>
                         </div>
                         <!-- /Left controls -->
@@ -330,16 +330,22 @@
                     <div class="col-6 col-sm-4 col-md-4 col-lg-6">
                         <!-- Center controls -->   
                         <div class="music_controls d-flex">
-                            <div>
-                                <a href="#" class="white"><i class="fas fa-random f_14 white"></i></a>
-                                <a href="#" class="white"><i class="fas fa-step-backward f_14 white"></i></a>
+                            <div class="m_controls">
+                                <div class="">
+                                    <a href="#" class="white"><i class="fas fa-random f_14 white"></i></a>
+                                    <a href="#" class="white"><i class="fas fa-step-backward f_14 white"></i></a>
+                                </div>
                                 <a href="#" class="white"><i class="play far fa-play-circle f_14 white"></i></a>
-                                <a href="#" class="white"><i class="fas fa-step-forward f_14 white"></i></a>
-                                <a href="#" class="white"><i class="fas fa-redo-alt f_14 white"></i></a>
+                                <div>
+                                    <a href="#" class="white"><i class="fas fa-step-forward f_14 white"></i></a>
+                                    <a href="#" class="white"><i class="fas fa-redo-alt f_14 white"></i></a>
+                                </div>
                             </div>
                             <div class="music_status">
                                 <span class="font-weight-bold f_10 white mx-2">0:25</span>
-                                <hr class="music_progress"></hr>
+                                <div class="music_progress">
+                                    <span class="music_progressbar"></span>
+                                </div>
                                 <span class="font-weight-bold f_10 white mx-2">4:35</span>
                             </div>
                         </div>                 
@@ -351,7 +357,9 @@
                             <a href="#"><i class="white fas fa-list f_14 mx-2"></i></a>
                             <a href="#"><i class="white fas fa-desktop f_14 mx-2"></i></a>
                             <a href="#"><i class="white fas fa-volume-up f_14 mx-2"></i></a>
-                            <span class="volume_progress"></span>
+                            <div class="volume_progress">
+                                <span class="volume_progressbar"></span>
+                            </div>
                         </div>
                         <!-- /Right controls -->
                     </div>

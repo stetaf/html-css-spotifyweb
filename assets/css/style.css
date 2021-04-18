@@ -281,6 +281,15 @@
     flex-grow: 2;
 }
 
+.music_controls .m_controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.m_controls a { padding: 5px; }
+
 .music_controls i {
     margin: 0px 12px;
     font-size: 20px;
@@ -298,6 +307,7 @@
     display: inline-block;
     width: 100%;
     border-radius: 5px;
+    position: relative;
 }
 
 .music_progress::after {
@@ -307,6 +317,17 @@
     width: 20%;
     margin: -2px -2px;
     border-radius: 5px;
+}
+
+.music_progressbar {
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+    top: -7px;
+    right: 80%;
+    z-index: 2;
 }
 
 .right_controls {
@@ -337,6 +358,45 @@
     border-radius: 5px;
     width: 25%;
 }
+
+.volume_progressbar {
+    position: absolute;
+    display: none;
+    background-color: white;
+    padding: 7px;
+    border-radius: 50%;
+    top: -7px;
+    right: 75%;
+    z-index: 2;
+}
+
+
+.home_icon:hover span,
+.search_icon:hover span,
+.library_icon:hover span,
+.main_categories ul li:hover a,
+.app_install .install_app:hover span,
+.app_install .install_app:hover i,
+.playlists_list li:hover a,
+.create_playlist:hover span,
+.song_heart:hover,
+.song_folder:hover {
+    color: white;
+}
+
+.create_playlist:hover .plus { background-color: white; }
+
+.song_t h6:not(.song_tit):hover { text-decoration: underline; }
+
+.bottom_controls .play:hover { font-size: 35.5px; }
+
+.upgrade_message:hover { padding: 12px 45px; }
+
+.music_progress:hover::after { border: 2px solid rgb(153, 197, 82); }
+.music_progress:hover .music_progressbar { display: block; }
+
+.volume_progress:hover::after { border: 2px solid rgb(153, 197, 82); }
+.volume_progress:hover .volume_progressbar { display: block; }
 /* /Main content */
 
 /* Utilities */
