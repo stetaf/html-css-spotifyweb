@@ -538,7 +538,14 @@
 
     .right_controls i { font-size: 12px; }
 
-    .volume_progress { display: none; }
+    .volume_progress { 
+        width: 95%;
+        margin-right: 0;
+    }
+
+    .volume_progress::after { width: 50%; }
+
+    .volume_progressbar { right: 30%; }
 
 }
 
