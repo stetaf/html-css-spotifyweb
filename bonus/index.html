@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- Font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Main -->
+    <main>
+        <div class="content_wrapper">
+            <!-- Main menu -->
+            <aside class="main_menu">
+                <div class="menu_container">
+                    <!-- Site Logo -->
+                    <div class="site_logo">
+                        <img src="./assets/img/logo.svg" class="logo_normal" alt="Spotify logo">
+                        <img src="./assets/img/logo-small.svg" class="logo_small" alt="Spotify small logo">
+                    </div>
+                    <!-- /Site Logo -->
+        
+                    <!-- Menu icons -->
+                    <div class="menu_icons d-flex">
+                        <div class="row">
+                            <div class="col">
+                                <div class="home_icon active_menu">
+                                    <a href="#" class="text-decoration-none gray">
+                                        <img src="./assets/img/home.svg" alt="Home icon">
+                                        <span class="white font-weight-bold f_14">Home</span>
+                                    </a>
+                                </div>
+                                <div class="search_icon">
+                                    <a href="#" class="text-decoration-none gray">
+                                        <img src="./assets/img/search.svg" alt="Search icon">
+                                        <span class="font-weight-bold f_14">Cerca</span>
+                                    </a>
+                                </div>
+                                <div class="library_icon">
+                                    <a href="#" class="text-decoration-none gray">
+                                        <img src="./assets/img/libreria.svg" alt="Library icon">
+                                        <span class="font-weight-bold f_14">La tua libreria</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Menu icons -->
+        
+                    <!-- Playlists -->
+                    <div class="menu_playlists font-weight-bold">
+                        <h6 class="text-uppercase white font-weight-bold">Playlist</h6>
+                        <div class="playlist_buttons">
+                            <div class="create_playlist">
+                                <a href="#" class="text-decoration-none">
+                                    <div class="plus"></div>
+                                    <span class="gray">Crea Playlist</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="playlists_list">
+                            <ul>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                                <li>
+                                    <span class="f_14"><a href="#" class="gray text-decoration-none">Nome Playlist</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Playlists -->
+                </div>
+        
+                <!-- Bottom user -->
+                <div class="user_profile my-1">
+                    <div class="app_install gray">
+                        <div class="install_app font-weight-bold">
+                            <a href="#" class="text-decoration-none gray">
+                                <i class="far fa-arrow-alt-circle-down"></i>
+                                <span class="mx-1">Installa app</span>
+                            </a>    
+                        </div>
+                        <hr class="my-1">
+                        <div class="profile my-2">
+                            <a href="#" class="text-decoration-none">
+                                <div class="profile_icon"></div>
+                            </a>
+                            <span class="align-middle mx-1 white font-weight-bold">John Doe</span>                            
+                        </div>
+                    </div>
+                </div>
+                <!-- /Bottom user -->
+        
+            </aside>
+            <!-- /Main menu -->
+        
+            <!-- Upgrade account -->
+            <section class="upgrade_account">
+                <a href="#" class="text-decoration-none">
+                    <span class="upgrade_message white text-uppercase font-weight-bold f_14">Effettua l'upgrade</span>
+                </a>
+            </section>
+            <!-- /Upgrade account -->
+    
+            <!-- Main content -->
+            <section class="main_content">
+                <div class="main_container">
+                    <!-- Categories -->
+                    <div class="main_categories">
+                        <ul class="text-uppercase text_center font-weight-bold f_14">
+                            <li class="active_2">
+                                <a href="#" class="gray text-decoration-none">In evidenza</a>
+                            </li>
+                            <li><a href="#" class="gray text-decoration-none">Podcast</a></li>
+                            <li><a href="#" class="gray text-decoration-none">Classifiche</a></li>
+                            <li><a href="#" class="gray text-decoration-none">Generi e mood</a></li>
+                            <li><a href="#" class="gray text-decoration-none">Nuove uscite</a></li>
+                            <li><a href="#" class="gray text-decoration-none">Scopri</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Categories -->
+        
+                    <!-- Songs -->
+                    <!-- Recently played -->
+                    <div class="recently_played">
+                        <h2 class="white font-weight-bold">Recently played</h2>
+                        <div class="songs_played d-flex">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/metal_lifting.jpg" class="song_img" alt="Metal cover">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>
+                                        <span class="text-center white">
+                                            <h5>Heavy Metal</h5>
+                                            <h6 class="gray">Subtitle</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/stranger.jpeg" class="song_img" alt="Stranger things cover">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>      
+                                        <span class="text-center white">
+                                            <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
+                                            <h6 class="gray">Kyle Dixon & Micheal Stein</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/aquietplace.jpeg" class="song_img" alt="A quiet place cover">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>      
+                                        <span class="text-center white">
+                                            <h5>A quiet place</h5>
+                                            <h6 class="gray">Subtitle</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/split.jpeg" class="song_img" alt="Split cover">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>   
+                                        <span class="text-center white">
+                                            <h5>Split</h5>
+                                            <h6 class="gray">Subtitle</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/cure.jpeg" class="song_img" alt="A cure for wellness cover">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>  
+                                        <span class="text-center white">
+                                            <h5>A cure for wellness</h5>
+                                            <h6 class="gray">Subtitle</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/sinister.jpeg" class="song_img" alt="Sinister cover">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>
+                                        <span class="text-center white">
+                                            <h5>Sinister</h5>
+                                            <h6 class="gray">Subtitle</h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Recently played -->
+            
+                    <!-- Created for -->
+                    <div class="created_for">
+                        <h2 class="white font-weight-bold">Creato per John Doe</h2>
+                        <h6 class="gray">Più ascolti, più accurati saranno i suggerimenti.</h6>
+                        <div class="music_artists">
+                            <div class="container-fluid">
+                                <div class="row justify-content-start">
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/radar.jpeg" class="song_img" alt="Release radar image">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>
+                                        <span class="text-center white">
+                                            <h5>Release radar</h5>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/mixdaily.jpeg" class="song_img" alt="Daily mix image">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>
+                                        <span class="text-center white">
+                                            <h5>Daily Mix 1</h5>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Created for -->
+    
+                    <!-- Popular artists -->
+                    <div class="popular_artists">
+                        <h2 class="white font-weight-bold">Artisti più popolari</h2>
+                        <h6 class="gray">Più ascolti, più accurati saranno i suggerimenti.</h6>
+                        <div class="music_artists">
+                            <div class="container-fluid">
+                                <div class="row justify-content-start">
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/youg.jpeg" class="song_img" alt="Youg image">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>
+                                        <span class="text-center white">
+                                            <h5>Youg</h5>
+                                        </span>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-2">
+                                        <a href="#">
+                                            <div class="play_song">
+                                                <img src="./assets/img/einaudi.jpeg" class="song_img" alt="Einaudi image">
+                                                <i class="far fa-play-circle"></i>
+                                                <div class="black"></div>
+                                            </div>       
+                                        </a>
+                                        <span class="text-center white">
+                                            <h5>Einaudi</h5>
+                                        </span>
+                                    </div>
+                                    <div class="col-lg-8"></div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- /Popular artists -->
+                    </div>
+                    <!-- /Songs -->
+                </div>
+            </section>
+            <!-- /Main content -->
+        </div>
+    
+        <!-- Bottom controls -->
+        <section class="bottom_controls">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-3 col-sm-4 col-md-4 col-lg-3">
+                        <!-- Left controls -->
+                        <div class="song_info d-flex">
+                            <img src="./assets/img/sinister.jpeg" alt="Sinister cover">
+                            <div class="song_t">
+                                <h6 class="song_tit font-weight-bold white">Sinister</h6>
+                                <h6 class="font-weight-bold gray">Brano Nome</h6>
+                            </div>
+                            <div class="song_titles d-flex">
+                                <i class="song_heart far fa-heart gray mx-4"></i>
+                                <i class="song_folder far fa-folder gray"></i>
+                            </div>
+                        </div>
+                        <!-- /Left controls -->
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 col-lg-6">
+                        <!-- Center controls -->   
+                        <div class="music_controls d-flex">
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center">
+                                    <div class="col-5 text_right">
+                                            <a href="#" class="white"><i class="fas fa-random f_14 white"></i></a>
+                                            <a href="#" class="white"><i class="fas fa-step-backward f_14 white"></i></a>
+                                    </div>
+                                    <div class="col-1">
+                                        <div class="m_controls">
+                                            <a href="#" class="white"><i class="play far fa-play-circle f_14 white"></i></a>
+                                        </div>                                
+                                    </div>
+                                    <div class="col-5">
+                                        <div>
+                                            <a href="#" class="white"><i class="fas fa-step-forward f_14 white"></i></a>
+                                            <a href="#" class="white"><i class="fas fa-redo-alt f_14 white"></i></a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="music_status">
+                                            <span class="font-weight-bold f_10 white mx-2">0:25</span>
+                                            <div class="music_progress">
+                                                <span class="music_progressbar"></span>
+                                            </div>
+                                            <span class="font-weight-bold f_10 white mx-2">4:35</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                 
+                        <!-- /Center controls -->
+                    </div>
+                    <div class="col-3 col-sm-4 col-md-4 col-lg-3">
+                        <!-- Right controls -->
+                        <div class="right_controls d-flex">
+                            <a href="#"><i class="white fas fa-list f_14 mx-2"></i></a>
+                            <a href="#"><i class="white fas fa-desktop f_14 mx-2"></i></a>
+                            <a href="#"><i class="white fas fa-volume-up f_14 mx-2"></i></a>
+                            <div class="volume_progress">
+                                <span class="volume_progressbar"></span>
+                            </div>
+                        </div>
+                        <!-- /Right controls -->
+                    </div>
+                </div>
+            </div>                
+        </section>
+        <!-- /Bottom controls -->
+    </main>
+    <!-- /Main -->
+</body>
+</html>
