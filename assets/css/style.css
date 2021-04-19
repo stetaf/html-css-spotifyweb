@@ -40,8 +40,6 @@
     float: left;
 }
 
-.main_container { margin: 0 20px; }
-
 .content_wrapper {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -167,6 +165,8 @@
 /* /Upgrade account */
 
 /* Main content */
+.main_container { margin: 0 15px; }
+
 .main_categories ul { 
     list-style: none; 
     padding: unset;
