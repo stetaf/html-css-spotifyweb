@@ -43,6 +43,8 @@
     height: calc(100vh - 100px);
     overflow: hidden;
 }
+
+.container-fluid { padding: 0; }
 /* /Page structure */
 
 /* Main menu */
