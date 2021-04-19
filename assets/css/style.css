@@ -391,7 +391,10 @@
 
 .create_playlist:hover .plus { background-color: white; }
 
-.song_t h6:not(.song_tit):hover { text-decoration: underline; }
+.song_t h6:not(.song_tit):hover { 
+    text-decoration: underline;
+    color: white;    
+}
 
 .bottom_controls .play:hover { font-size: 35.5px; }
 
