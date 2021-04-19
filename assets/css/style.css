@@ -562,3 +562,17 @@
 @media screen and (max-width:475px) {
     .song_titles {display: none !important; }
 }
+
+@media  screen and (max-width:350px) {
+    .song_t,
+    .volume_progress,
+    .music_controls .fa-redo-alt,
+    .music_controls .fa-random { display: none; }    
+   
+    .song_info img { width: 65px; }
+
+    .music_status { 
+        width: 85%;
+        margin: 0 auto;
+    }
+}
