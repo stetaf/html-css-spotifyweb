@@ -23,15 +23,18 @@
 .upgrade_account {
     width: calc(100% - 230px);
     height: 100px;
-    background-color: #080b12;
+    background-color: #080b12d4;;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: absolute;
+    left: 230px;
+    z-index: 2;
 }
 
 .main_content { 
     width: calc(100% - 230px);
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     overflow-y: auto;
     background-color: #141922;
     float: left;
@@ -174,7 +177,7 @@
     margin: 15px 10px;
 }
 
-.main_categories 
+.main_categories { padding-top: 100px; }
 
 .active_2 { position: relative; }
 
@@ -482,6 +485,8 @@
 
     .main_content,
     .upgrade_account { width: calc( 100% - 50px ); }
+
+    .upgrade_account { left: 50px; }
 
     .home_icon img, 
     .search_icon img, 
