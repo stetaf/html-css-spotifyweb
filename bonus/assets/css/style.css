@@ -584,8 +584,10 @@
 ************************/
 
 /* Hide call-to-action button */
-.upgrade_account:active { display: none; }
-.upgrade_account:active + .main_content { padding-top: 0 !important; }
+@media screen and (max-height:800px) {
+    .upgrade_account { display: none !important; }
+    .main_content { padding-top: 0 !important; }    
+}
 /***********/
 
 /* Animations */
@@ -615,3 +617,4 @@
         padding-left: 15px;
     }
 }
+/***********/
