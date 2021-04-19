@@ -588,5 +588,30 @@
 .upgrade_account:active + .main_content { padding-top: 0 !important; }
 /***********/
 
+/* Animations */
+.create_playlist:hover .plus {
+    transition: transform 2s linear;
+    margin-left: 5px;
+    transform: rotate(360deg);
+} 
 
+.playlists_list span:hover {
+    transition: font-size 2s linear -1s;
+    font-size: 16px;
+}
 
+.menu_icons a:hover { 
+    transition: padding linear 1s;
+    padding-left: 25px;
+}
+
+.music_controls .play:hover {
+    transition: transform 2s linear;
+    transform: rotate(360deg);
+}
+
+@media screen and (max-width:575px) {
+    .menu_icons a:hover { 
+        padding-left: 15px;
+    }
+}
