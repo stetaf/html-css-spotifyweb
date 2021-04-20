@@ -603,7 +603,7 @@
 ************************/
 
 /* Hide call-to-action button */
-@media screen and (max-height:800px) {
+@media screen and (max-height:700px) {
     .upgrade_account { display: none; }
     .main_content { padding-top: 0; }    
 }
