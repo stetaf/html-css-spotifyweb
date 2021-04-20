@@ -217,13 +217,17 @@
     font-weight: bold;
 }
 
-.recently_played h4 { 
+.recently_played h4,
+.created_for h4,
+.popular_artists h4 { 
     display: none;
     vertical-align: middle;
     margin-left: 4px;
 }
 
-.recently_played h4 a {
+.recently_played h4 a,
+.created_for h4 a,
+.popular_artists h4 a {
     padding: 1px 10px;
     border: 1px solid white;
     border-radius: 6px;
@@ -399,7 +403,9 @@
 .create_playlist:hover span,
 .song_heart:hover,
 .song_folder:hover,
-.recently_played h4:hover a {
+.recently_played h4:hover a,
+.popular_artists h4:hover a,
+.created_for h4:hover a {
     color: white;
 }
 
@@ -640,12 +646,26 @@
     .recently_played h4 { display: inline-block; }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:576px) and (max-width:767px) {
     .songs_played [class*="col"]:nth-child(3),
     .songs_played [class*="col"]:nth-child(4),
     .songs_played [class*="col"]:nth-child(5),
     .songs_played [class*="col"]:nth-child(6) { display: none; }
 
     .recently_played h4 { display: inline-block; }
+}
+
+@media screen and (max-width:575px) {
+    .songs_played [class*="col"]:nth-child(2),
+    .songs_played [class*="col"]:nth-child(3),
+    .songs_played [class*="col"]:nth-child(4),
+    .songs_played [class*="col"]:nth-child(5),
+    .songs_played [class*="col"]:nth-child(6),
+    .popular_artists [class*="col"]:nth-child(2),
+    .created_for [class*="col"]:nth-child(2) { display: none; }
+
+    .recently_played h4,
+    .popular_artists h4,
+    .created_for h4 { display: inline-block; }
 }
 /***********/
